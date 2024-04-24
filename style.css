@@ -1,0 +1,244 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0; /* Remove default padding */
+  scroll-snap-type: y mandatory; /* Enable scroll snapping */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #FAEDDC;
+}
+
+.logo img {
+  height: 70px;
+  position: absolute;
+  top: 0px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 10px 100px;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #884C41;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-links .book-now-button {
+  padding: 15px 30px; /* Additional padding for the "Book Now!" button */
+  background-color: #884C41; /* Background color */
+  color: #fff;
+  border-radius: 50px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.nav-links .book-now-button:hover {
+  background-color: #884c41a7; /* Darker background color on hover */
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FAE9D5;
+  padding: 30px; /* Adjust padding as needed */
+  height: 100%; /* Set height to viewport height */
+}
+
+/* Text section */
+.text-section {
+  flex: 1;
+  margin-bottom: 100px;
+  text-align: left; /* Align text to the left */
+}
+
+.text-section h1 {
+  font-size: 80px; /* Adjust heading font size */
+  color: #884C42;
+}
+
+.content-container .launch{
+  color:#FFA593;
+  margin-top: 15%;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.content-container .parag2{
+  color: #884C42;
+  margin-top: 60px; /* Adjust spacing between paragraphs */
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 22px;
+}
+
+.content-container .freetrial{
+  color: #884C42;
+  margin-top: 80px; /* Adjust spacing between paragraphs */
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 30px;
+}
+
+.signup-butt {
+  padding: 12px 20px; /* Adjust padding as needed */
+  background-color: #884C42; /* Button background color */
+  color: #fff; /* Button text color */
+  margin-top: 30px;
+  margin-left: 370px;
+  border: none;
+  border-radius: 50px; /* Rounded corners */
+  font-size: 20px;
+  font-family: serif;
+  cursor: pointer;
+  transition: transform 0.09s ease, box-shadow 0.3s ease; /* Smooth transitions for transform and box-shadow properties */
+}
+
+.signup-butt:hover {
+  transform: translateY(-1px); /* Levitate effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* Image section */
+.image-section {
+  justify-content: flex-end; /* Align image to the right */
+}
+
+.image-section img {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  max-height: 100%; /* Ensure image does not exceed container height */
+  height: 600px; /* Maintain aspect ratio */
+  margin-right: 100px;
+}
+
+.split-container {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  scroll-snap-align: start; /* Snap align for smooth scrolling */
+}
+
+.split {
+  height: 100%;
+  overflow-y: auto; /* Enable vertical scroll within split sections */
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  position: static; /* Use static instead of fixed for scrollable content */
+}
+
+.left {
+  width: 60%; /* Left side now takes 70% of the width */
+  background-image: url('leftcov.png');
+  background-position: center;
+  color: black;
+}
+
+.right {
+  width: 40%; /* Right side now takes 30% of the width */
+  background-image: url('newrightcov.png'); /* Replace 'your-right-side-background-image.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.logohorizon img{
+  position: absolute;
+  top: -100px;
+  left: 80px;
+  max-width: 100%; /* Ensure image does not exceed container width */
+  max-height: 100%; /* Ensure image does not exceed container height */
+  height: 500px; /* Maintain aspect ratio */
+  width: 1300px;
+  margin-bottom: 40px;
+}
+
+.head1 {
+  margin-top: 350px; /* Add some spacing between header and paragraph */
+  font-size: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+  color: #884C41;
+}
+
+h1, p {
+  margin: 10;
+  text-align: center; /* Center text horizontally */
+}
+
+
+.signup-button {
+  padding: 12px 20px; /* Adjust padding as needed */
+  background-color: #FFA593; /* Button background color */
+  color: #000000; /* Button text color */
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  font-size: 16px;
+  font-family: serif;
+  cursor: pointer;
+  transition: transform 0.09s ease, box-shadow 0.3s ease; /* Smooth transitions for transform and box-shadow properties */
+}
+
+.signup-button:hover {
+  transform: translateY(-1px); /* Levitate effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.social-icons {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px; /* Adjust as needed */
+}
+
+.split-container {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  scroll-snap-align: start; /* Snap align for smooth scrolling */
+}
+
+.social-icons a img {
+  width: 30px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect: levitate and iconify */
+.social-icons a:hover img {
+  transform: translateY(-5px);
+}
