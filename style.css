@@ -65,7 +65,6 @@ body {
   height: 100%; /* Set height to viewport height */
 }
 
-/* Text section */
 .text-section {
   flex: 1;
   margin-bottom: 100px;
@@ -100,7 +99,7 @@ body {
   margin-top: 80px; /* Adjust spacing between paragraphs */
   margin-left: 30px;
   margin-right: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   padding-left: 40px;
   padding-right: 40px;
   font-size: 30px;
@@ -110,8 +109,8 @@ body {
   padding: 12px 20px; /* Adjust padding as needed */
   background-color: #884C42; /* Button background color */
   color: #fff; /* Button text color */
-  margin-top: 30px;
-  margin-left: 370px;
+  text-decoration: none;
+  margin-left: 400px;
   border: none;
   border-radius: 50px; /* Rounded corners */
   font-size: 20px;
@@ -125,7 +124,16 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
 }
 
-/* Image section */
+.connectus{
+  color: #884C42; /* Button text color */
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: serif;
+}
+
+
 .image-section {
   justify-content: flex-end; /* Align image to the right */
 }
